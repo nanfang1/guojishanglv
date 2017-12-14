@@ -1,0 +1,200 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #f5f5f5;
+	font-family: "微软雅黑";
+	margin: 0px auto;
+}
+div,input,img,button,figure{
+	box-sizing: border-box; /*保证空间区域不变，不会受padding，border的影响*/
+}
+img{
+	display: block;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+/*头部*/
+#header{
+	width: 100%;
+	height: 70px;
+	background-color: #00bfff;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	/*层*/
+	z-index: 999;
+}
+#header .center{
+	width: 1000px;
+	height: 100%;
+	margin: 0px auto;
+}
+#header .center .logo{
+	width: 30%;
+	height: 70px;
+	background: url(../img/logo.jpg) no-repeat left center;
+	float: left;
+}
+#header .center  .link{
+	width: 60%;
+	height: 70px;
+	line-height: 70px;
+	color: #00BFFF;
+	float: right;
+}
+#header .center .link li{
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+#header .center .link li a{
+	color: white;
+	border-right: 1px solid lightskyblue;
+	display: block;
+}
+#header .center .link li a:hover{
+	background: darkorange;
+}
+/*banner*/
+#adver{
+	position: relative;
+	margin: 0px auto;
+	width: 100%;
+}
+#adver img{
+	margin: 0px auto;
+	width: 100%;
+}
+#adver .center{
+	width: 40%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -20%;
+}
+#adver .center .search{
+	width: 70%;
+	height: 52px;
+	font-size: 20px;
+	border: 2px solid deepskyblue;
+	border-right: none;
+	padding-left: 10px;
+	float: left;
+}
+#adver .center .butotn{
+	width: 30%;
+	height: 52px;
+	background: deepskyblue;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	border: 2px solid deepskyblue;
+	float: left;
+}
+/*旅游*/
+#tour{
+	max-width:1350px;
+	height: 1450px;
+	margin: 0px auto;
+}
+#tour .center{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#tour .center h2{
+	color: #666666;
+	
+	margin: 30px auto;
+	font-size: 35px;
+	letter-spacing: 5px;
+	/*文本阴影*/
+	text-shadow:0px 5px 10px #666666;
+}
+#tour .center p a{
+	font-size: 16px;	
+	color: #666;
+}
+#tour .center p a:hover{
+	color: deepskyblue;
+}
+/*推荐内容*/
+#tour .figure{
+	width: 100%;
+	height: 1200px;
+	margin: 0px auto;
+	
+}
+#tour .figure .figcaption  {
+	width: 30%;
+	height: 100%px;
+	float: left;
+	border: 1px solid deepskyblue;
+	border-radius: 1%;
+	margin-left: 20px;
+	margin: 10px 5px;
+	position: relative;
+	cursor: pointer;
+}
+#tour .figure .figcaption img{
+	width: 98%;
+	height: 280px;
+	margin: 5px 5px;
+}
+.clear{
+	clear: both;
+	height: 0;
+}
+#tour .figure .figcaption .tour_title strong{
+	font-size: 16px;
+	color: red;
+}
+#tour .figure .figcaption .tour_title{
+height: 50px;
+font-size: 16px;
+margin: 10px 10px;
+letter-spacing: 1px;
+}
+#tour .figure .figcaption .info .sat{
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	float: right;
+	font-size: 15px;
+
+}
+#tour .figure .figcaption .info .price{
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 15px;
+	color: green;
+}
+#tour .figure .figcaption .info .type{	
+	width: 100px;
+	height: 25px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	background: rgba(73,83,112,0.5);
+	position: absolute;
+	left: 0px;
+	top: 5px;
+}
+#tour .figure .figcaption .info{
+	height: 35px;
+}
+#tour .figure .figcaption .info .price strong{
+	font-size: 23px;
+}
